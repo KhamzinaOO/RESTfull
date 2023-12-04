@@ -1,7 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddDbContext<RESTfull.Infrastructure.Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("RESTfullAPIContext") ?? throw new InvalidOperationException("Connection string 'RESTfullAPIContext' not found.")));
 
 // Add services to the container.
 

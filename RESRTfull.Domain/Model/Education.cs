@@ -9,7 +9,6 @@ namespace RESRTfull.Domain
         public string Type { get; set; } = string.Empty;
         public string Institution { get; set; } = string.Empty;
 
-        //?
         [DataType(DataType.Date)]
         [Column(TypeName = "Date")]
         public DateTime Date { get; set; }

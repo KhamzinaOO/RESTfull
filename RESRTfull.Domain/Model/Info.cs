@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Numerics;
 
 namespace RESRTfull.Domain
 {
@@ -19,5 +20,6 @@ namespace RESRTfull.Domain
         [ForeignKey("IndividualID")]
         public Individual Individual { get; set; } = null!;
 
+    
     }
 }

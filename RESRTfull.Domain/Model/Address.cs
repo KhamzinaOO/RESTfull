@@ -8,7 +8,8 @@ namespace RESRTfull.Domain
         public Guid ID { get; set; }
         public string AddressPermanentRegistration { get; set; } = string.Empty;
         public string? AddressTemporaryRegistration { get; set; }
-        //сделать через modelBuilder.Entity<BlogHeader>()
+
+        //сделать через modelBuilder.Entity<>()
         public Guid IndividualID { get; set; }
         [ForeignKey("IndividualID")]
         public Individual Individual { get; set; } = null!;
